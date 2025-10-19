@@ -1137,13 +1137,13 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Ngày 20.10 chúc bạn của Khoi luôn luôn xinh đẹp, tươi trẻ, có thêm nhiều chàng trai đeo bám như lửa bám xăng, như răng bám lợi, như trời bám mây, như cây bám đất, như tất bám bàn chân, chúc cho mọi dự định trong tương lai của bạn sẽ thành công. Hạnh phúc bên gia đình và người thương (nếu có).";
+        const textLetterP = "Ngày 20.10 chúc bạn của Khoi luôn luôn xinh đẹp, tươi trẻ, có thêm nhiều chàng trai đeo bám như lửa bám xăng, như răng bám lợi, như trời bám mây, như cây bám đất, như tất bám bàn chân, chúc cho mọi dự định trong tương lai của bạn sẽ thành công. Chúc bạn hạnh phúc bên gia đình và người thương (nếu có).";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
                 textLetterContent.textContent += textLetterP[indexTextContent];
                 indexTextContent++;
-                setTimeout(indexTextContent, 1);
+                setTimeout(textCharLetterContent, 1);
             }
             else {
                 clearInterval(timoutTextLetterContent)
