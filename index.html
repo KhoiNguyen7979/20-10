@@ -698,8 +698,8 @@
         <text dy="-2">
             <textPath style="font-family: fantasy;" xlink:href="#partialPath" startOffset="12">
                 🌹Happy Women's Day
-                🌹.........................................................................................................................................🌹From
-                With Love 20/10!🌹
+                🌹.....................................................................................................................................🌹From
+                Khoi Nguyen🌹
             </textPath>
         </text>
 
@@ -946,7 +946,7 @@
         <p id="text-click" style=" display: none;   font-family: fantasy;
         color: indianred;
         font-size: 50px;
-        top: 80%;">Click me now !</p>
+        top: 80%;">Click the flower!</p>
     </div>
 
     <!-- <div class="box-content">
@@ -1109,14 +1109,14 @@
         // .textLetter text h2
         let indexText = 0;
         let textLetter = document.querySelector('.textLetter h2');
-        const textLetterH2 = "Gửi bạn nữ may mắn!";
+        const textLetterH2 = "Gửi bạn nữ!";
         let timoutTextLetter;
 
         function textCharLetter() {
             if (indexText < textLetterH2.length) {
                 textLetter.textContent += textLetterH2[indexText];
                 indexText++;
-                setTimeout(indexText, 100);
+                setTimeout(indexText, 60);
             }
             else {
                 clearInterval(timoutTextLetter);
@@ -1137,13 +1137,13 @@
         // chữ của thư bạn muốn gửi
         let indexTextContent = 0;
         let textLetterContent = document.querySelector('.contentLetter');
-        const textLetterP = "Ngày 20.10 chúc bạn của Khoi luôn luôn xinh đẹp, tươi trẻ, có thêm nhiều chàng trai đeo bám như lửa bám xăng, như răng bám lợi, như trời bám mây, như cây bám đất, như tất bám bàn chân, chúc cho mọi dự định trong tương lai của bạn sẽ thành công. Chúc bạn hạnh phúc bên gia đình và người thương (nếu có).";
+        const textLetterP = "Ngày 20.10 chúc bạn của Khoi luôn luôn xinh đẹp, tươi trẻ, có nhiều chàng trai đeo bám như lửa bám xăng, như răng bám lợi, như trời bám mây, như cây bám đất, như tất bám bàn chân, chúc cho mọi dự định trong tương lai của bạn sẽ thành công. Chúc bạn hạnh phúc bên gia đình và người thương (nếu có).";
         let timoutTextLetterContent;
         function textCharLetterContent() {
             if (indexTextContent < textLetterP.length) {
                 textLetterContent.textContent += textLetterP[indexTextContent];
                 indexTextContent++;
-                setTimeout(textCharLetterContent, 4);
+                setTimeout(textCharLetterContent, 600);
             }
             else {
                 clearInterval(timoutTextLetterContent)
